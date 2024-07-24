@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginContext" prefHeight="577.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientLoginFormController">
+   <children>
+      <ImageView fitHeight="577.0" fitWidth="940.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/HD-wallpaper-purple-blue-bubbles-gradient-blue-bubbles-colors-purple.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="2" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="440.0" fitWidth="785.0" layoutX="139.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image_clipdrop-cleanup.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="5.0" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="492.0" layoutX="58.0" layoutY="50.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" width="345.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <Label layoutX="160.0" layoutY="75.0" prefHeight="61.0" prefWidth="141.0" text="Chat With" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="174.0" layoutY="366.0" onAction="#btnLogInOnAction" prefHeight="37.0" prefWidth="113.0" ripplerFill="WHITE" style="-fx-background-color: #341f97; -fx-background-radius: 7; -fx-border-radius: 7; -fx-border-color: #c8d6e5;" text="Log In" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <Label layoutX="149.0" layoutY="106.0" prefHeight="61.0" prefWidth="172.0" text="PLAY TECH" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="173.0" prefHeight="49.0" prefWidth="80.0" text="LogIn" textFill="WHITE">
+         <font>
+            <Font name="Brush Script MT Italic" size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="145.0" layoutY="296.0" prefHeight="31.0" prefWidth="172.0" promptText="Enter Your User Name" unFocusColor="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="733.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientDashBoardController">
+   <children>
+      <ImageView fitHeight="733.0" fitWidth="437.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/bubbles-daisy-whatsapp-wallpaper.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="733.0" layoutX="-9.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="446.0" />
+      <TextField fx:id="txtField" layoutX="101.0" layoutY="632.0" prefHeight="45.0" prefWidth="276.0" style="-fx-border-color: black;">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <Label fx:id="lblName" layoutX="54.0" layoutY="31.0" prefHeight="29.0" prefWidth="248.0" text="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="269.0" layoutY="635.0" onMouseClicked="#photoOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-attachment-50.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="45.0" layoutX="54.0" layoutY="632.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="57.0" layoutY="635.0" onMouseClicked="#emojiOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-happy-90.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="54.0" layoutY="72.0" prefHeight="542.0" prefWidth="323.0" style="-fx-border-color: black; -fx-border-radius: 2; -fx-border-radius: 5;">
+         <children>
+            <ScrollPane opacity="0.32" prefHeight="542.0" prefWidth="323.0" />
+            <ImageView blendMode="DARKEN" fitHeight="29.0" fitWidth="38.0" layoutX="290.0" layoutY="4.0" onMouseClicked="#AddClientOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-plus.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <VBox fx:id="vBox" layoutX="3.0" layoutY="35.0" prefHeight="506.0" prefWidth="316.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="308.0" layoutY="633.0" onAction="#btnSendOnAction" prefHeight="43.0" prefWidth="68.0" style="-fx-border-color: #2c3e50; -fx-border-width: 1; -fx-background-color: #00a8ff;" text="Send">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="emojiPane" cacheShape="false" centerShape="false" layoutX="54.0" layoutY="459.0" opacity="0.64" prefHeight="155.0" prefWidth="214.0" scaleShape="false" style="-fx-background-color: #87B4D3;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#smileOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smile.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="14.0" layoutY="53.0" onMouseClicked="#cryingOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/crying.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="62.0" layoutY="53.0" onMouseClicked="#smile2photoOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smile2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="62.0" layoutY="103.0" onMouseClicked="#smile4OnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smiling4.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="111.0" layoutY="103.0" onMouseClicked="#neutralOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/neutral.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="159.0" layoutY="53.0" onMouseClicked="#hateOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hate.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="62.0" layoutY="4.0" onMouseClicked="#smile3photoOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/smile3.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="111.0" layoutY="53.0" onMouseClicked="#smile5OnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/unamused.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="14.0" layoutY="103.0" onMouseClicked="#smile6OnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/downcast.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="111.0" layoutY="4.0" onMouseClicked="#sadOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sad.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="47.0" layoutX="159.0" layoutY="4.0" onMouseClicked="#kissOnMouseClickedOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/kiss.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView blendMode="DARKEN" fitHeight="29.0" fitWidth="23.0" layoutX="404.0" layoutY="10.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-minimize-90.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
